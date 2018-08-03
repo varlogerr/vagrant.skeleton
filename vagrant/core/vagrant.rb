@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
       the_vm = box.vm
 
       the_vm.box_check_update = false
-      the_vm.box = SUPPORTED_IMAGES["ubuntu18"]
+      the_vm.box = box_conf[:image]
       the_vm.hostname = box_conf[:box_host]
     end
   end

@@ -8,10 +8,18 @@ BOXES = [
     :image    => SUPPORTED_IMAGES["ubuntu18"],
     :box_name => "box1",
     :host     => "TheBox1",
-    :ip       => nil,
-    :memory   => 1024,
-    :cpus     => 1,
-    :gui      => false,
+    :defaults => {
+      :ip       => nil,
+      :gui      => false,
+      :memory   => 1024,
+      :cpus     => 1,
+    },
+    :env_vars => {
+      :ip       => "IP",
+      :gui      => "GUI",
+      :memory   => "MEMORY",
+      :cpus     => "CPUS",
+    },
   },
 ]
 

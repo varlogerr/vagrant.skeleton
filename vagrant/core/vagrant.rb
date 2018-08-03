@@ -12,6 +12,10 @@ Vagrant.configure("2") do |config|
       the_vm.box = box_conf[:image]
       the_vm.hostname = box_conf[:box_host]
 
+      if box_conf[:ip] != nil
+        the_vm.network "private_network", ip: box_conf[:ip]
+      end
+
       the_vm.provider "virtualbox" do |vb|
         vb.gui = box_conf[:gui]
         vb.memory = box_conf[:memory]

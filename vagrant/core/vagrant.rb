@@ -11,6 +11,14 @@ Vagrant.configure("2") do |config|
       the_vm.box_check_update = false
       the_vm.box = box_conf[:image]
       the_vm.hostname = box_conf[:box_host]
+
+      the_vm.provider "virtualbox" do |vb|
+        vb.gui = box_conf[:gui]
+        vb.memory = box_conf[:memory]
+        vb.cpus = box_conf[:cpus]
+
+        vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      end
     end
   end
 end

@@ -1,9 +1,12 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+load File.expand_path("#{ File.dirname(__FILE__) }/lib/Hash.rb")
+load File.expand_path("#{ File.dirname(__FILE__) }/defaults.rb")
+
 Vagrant.configure("2") do |config|
   BOXES.each_index do |index|
-    box_conf = BOXES[index]
+    box_conf = BOXES[index].deep_merge(DEFAULT_BOX)
     box_defaults = box_conf[:defaults]
     env_vars = box_conf[:env_vars]
 

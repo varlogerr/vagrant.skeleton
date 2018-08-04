@@ -8,9 +8,10 @@ load "#{ core_path }/images.rb"
 
 BOXES = [
   {
+    # box name should be unique per boxes set in 1 manifest
+    :box_name => "box",
+    :host     => "TheBox",
     :image    => SUPPORTED_IMAGES["ubuntu18serv"],
-    :box_name => "box1",
-    :host     => "TheBox1",
     :defaults => {
       :ip       => nil,
       :gui      => false,

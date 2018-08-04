@@ -8,7 +8,7 @@ load "#{ core_path }/images.rb"
 
 BOXES = [
   {
-    :image    => SUPPORTED_IMAGES["ubuntu18"],
+    :image    => SUPPORTED_IMAGES["ubuntu18serv"],
     :box_name => "box1",
     :host     => "TheBox1",
     :defaults => {

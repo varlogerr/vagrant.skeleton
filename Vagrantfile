@@ -1,7 +1,10 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-load File.expand_path("#{ File.dirname(__FILE__) }/vagrant/core/images.rb")
+vagrant_path = File.expand_path("#{ File.dirname(__FILE__) }/vagrant")
+core_path = "#{ vagrant_path }/core"
+
+load "#{ core_path }/images.rb"
 
 BOXES = [
   {
@@ -27,4 +30,4 @@ BOXES = [
   },
 ]
 
-load File.expand_path("#{ File.dirname(__FILE__) }/vagrant/core/vagrant.rb")
+load "#{ core_path }/vagrant.rb"

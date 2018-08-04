@@ -1,0 +1,3 @@
+[submodule "vagrant/core"]
+	path = vagrant/core
+	url = git@github.com:varlogerr/vagrant.core.git

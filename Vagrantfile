@@ -26,7 +26,7 @@ BOXES = [
     },
     :provisions => [
       # [:shell, :path => "vagrant/provisioner-installers/deb-ansible-install"],
-      # [:shell, :inline => "echo 'Hello from dummy inline provisioner'"],
+      # [:shell, :inline => "cd /vagrant/vagrant/unibook && ansible-playbook vagrantbook.yml", :privileged => false],
     ],
   },
 ]

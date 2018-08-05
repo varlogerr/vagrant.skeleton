@@ -25,7 +25,7 @@ BOXES = [
       :cpus     => "CPUS",
     },
     :provisions => [
-      # [:shell, :path => "vagrant/core/dummy/test.sh"],
+      # [:shell, :path => "vagrant/provisioner-installers/deb-ansible-install"],
       # [:shell, :inline => "echo 'Hello from dummy inline provisioner'"],
     ],
   },

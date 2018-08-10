@@ -1,9 +1,0 @@
-[submodule "vagrant/core"]
-	path = vagrant/core
-	url = git@github.com:varlogerr/vagrant.core.git
-[submodule "vagrant/provisioner-installers"]
-	path = vagrant/provisioner-installers
-	url = git@github.com:varlogerr/provisioner-installers.git
-[submodule "vagrant/unibook"]
-	path = vagrant/unibook
-	url = git@github.com:varlogerr/ansible.unibook.git

@@ -1,0 +1,9 @@
+[submodule "vagrant/core"]
+	path = vagrant/core
+	url = https://github.com/varlogerr/vagrant.core.git
+[submodule "vagrant/provisioner-installers"]
+	path = vagrant/provisioner-installers
+	url = https://github.com/varlogerr/provisioner-installers.git
+[submodule "vagrant/unibook"]
+	path = vagrant/unibook
+	url = https://github.com/varlogerr/ansible.unibook.git

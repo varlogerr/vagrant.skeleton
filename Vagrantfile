@@ -25,13 +25,12 @@ BOXES = [
       :cpus     => "CPUS",
     },
     :synced_folders => [
-      # work around for https://github.com/ansible/ansible/issues/42388
-      # for windows
+      # windows work around for https://github.com/ansible/ansible/issues/42388
       ["./vagrant/unibook", "/provisioning/unibook", mount_options: ["dmode=755", "fmode=644"]]
     ],
     :provisions => [
-      [:shell, :path => "vagrant/provisioner-installers/ubu16-ansible-install"],
-      [:shell, :inline => "cd /provisioning/unibook/vagrantbook && ansible-playbook vagrantbook.yml", :privileged => false],
+      # [:shell, :path => "vagrant/provisioner-installers/ubu16-ansible-install"],
+      # [:shell, :inline => "cd /provisioning/unibook/unibook && ansible-playbook unibook.yml", :privileged => false],
     ],
   },
 ]
